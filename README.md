@@ -2,6 +2,8 @@
 
 A premium, dark-themed personal portfolio for **Sirivalli Bethi** — Computer Science (AI & ML) undergraduate, backend & ML systems builder. Built as a production-ready single-page site with a custom 404 route.
 
+**Live:** [sirivalli-stack.github.io](https://sirivalli-stack.github.io/) · [sirivalli-bethi-portfolio.vercel.app](https://sirivalli-bethi-portfolio.vercel.app)
+
 **Stack:** React 18 · Vite 7 · TypeScript · Tailwind CSS · Framer Motion · Lucide React · React Router
 
 ---
@@ -73,6 +75,15 @@ npm run preview
 2. In [Vercel](https://vercel.com), click **Add New → Project** and import the repository.
 3. Vercel auto-detects Vite — build command `npm run build`, output directory `dist` (no changes needed).
 4. Deploy. `vercel.json` already contains the SPA rewrite so deep links and unknown routes serve the custom 404 page.
+
+---
+
+## Updating the live site
+
+After making changes and running `npm run build`:
+
+- **GitHub Pages:** push the contents of `dist/` to the `gh-pages` branch (that branch is what GitHub serves).
+- **Vercel:** `npx vercel deploy --prod --yes`
 
 ---
 
